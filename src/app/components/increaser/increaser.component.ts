@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-progress',
-  templateUrl: './progress.component.html',
+  selector: 'app-increaser',
+  templateUrl: './increaser.component.html',
   styles: []
 })
-export class ProgressComponent implements OnInit {
+export class IncreaserComponent implements OnInit {
 
   percentage: number = 50;
 
@@ -18,4 +18,5 @@ export class ProgressComponent implements OnInit {
   {
     if(this.percentage+val<=100 && this.percentage+val>=0)  this.percentage+=val;
   }
+
 }

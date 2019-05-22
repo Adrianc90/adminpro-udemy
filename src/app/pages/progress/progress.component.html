@@ -6,7 +6,11 @@
           <div class="card-body">
             <h4 class="card-title">Progress Bar</h4>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValueNow]="percentage" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" [style.width]="percentage + '%'" ></div>
+            </div>
+            <br>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.ariaValueNow]="percentage" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" [style.width]="percentage + '%'" ></div>
             </div>
           </div>
       </div>
@@ -18,15 +22,19 @@
         <div class="card">
             <div class="card-body">
               
-                <div class="input-group">
+                <!-- <div class="input-group">
                     <span class="input-group-btn">
-                      <button class="btn btn-secondary" type="button">Hate it</button>
+                      <button class="btn btn-primary" type="button" (click)="SetBarValue(-5)">
+                        <i class="mdi mdi-minus"></i>
+                      </button>
                     </span>
-                    <input type="text" class="form-control" placeholder="Product name..." aria-label="Product name">
+                    <input type="text" class="form-control" name="percentage" [(ngModel)]="percentage">
                     <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">Love it</button>
+                        <button class="btn btn-primary" type="button" (click)="SetBarValue(+5)">
+                            <i class="mdi mdi-plus"></i>
+                        </button>
                       </span>
-                </div>
+                </div> -->
 
             </div>
         </div>
