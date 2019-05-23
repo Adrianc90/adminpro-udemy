@@ -10,15 +10,13 @@ import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { IncreaserComponent } from './components/increaser/increaser.component';
-
 
 @NgModule({
-  declarations: [
+  declarations: 
+  [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
-    IncreaserComponent
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

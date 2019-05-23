@@ -7,15 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
-  percentage: number = 50;
+  BluePercentage: number = 50;
+  GreenPercentage: number = 50;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  SetBarValue(val: number)
+  UpdateProgress( event: number )
   {
-    if(this.percentage+val<=100 && this.percentage+val>=0)  this.percentage+=val;
+    this.BluePercentage=event;  
   }
 }
