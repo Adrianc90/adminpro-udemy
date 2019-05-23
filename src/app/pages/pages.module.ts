@@ -7,7 +7,6 @@ import { Graphics1Component } from './graphics1/graphics1.component';
 import { PagesComponent } from './pages.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
-import { ChartsModule } from 'ng2-charts';
 
 @NgModule(
     {
@@ -23,8 +22,7 @@ import { ChartsModule } from 'ng2-charts';
             SharedModule,
             PAGES_ROUTES,
             FormsModule,
-            ComponentsModule,
-            ChartsModule
+            ComponentsModule
         ],
         exports :
         [

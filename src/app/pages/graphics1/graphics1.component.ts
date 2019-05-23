@@ -49,4 +49,8 @@ export class Graphics1Component implements OnInit {
   ngOnInit() {
   }
 
+  test()
+  {
+    console.log(this.graficos.grafico1.labels[0]);
+  }
 }
