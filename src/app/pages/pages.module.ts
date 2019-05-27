@@ -7,6 +7,7 @@ import { Graphics1Component } from './graphics1/graphics1.component';
 import { PagesComponent } from './pages.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule(
     {
@@ -15,7 +16,8 @@ import { ComponentsModule } from '../components/components.module';
             PagesComponent,
             DashboardComponent,
             ProgressComponent,
-            Graphics1Component
+            Graphics1Component,
+            AccountSettingsComponent
         ],
         imports:
         [
