@@ -1,7 +1,8 @@
+<h4 class="card-title">{{ graphic.leyenda }}</h4>
 <div style="display: block">
   <canvas baseChart
-    [data]="doughnutChartData"
-    [labels]="doughnutChartLabels"
-    [chartType]="doughnutChartType">
+    [data]="graphic.data"
+    [labels]="graphic.labels"
+    [chartType]="graphic.type">
   </canvas>
 </div>

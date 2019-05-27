@@ -2,40 +2,14 @@
   <div class="col-6">
       <div class="card">
           <div class="card-body">
-            <h4 class="card-title">{{ graficos.grafico1.leyenda }}</h4>
-            <app-donut-chart 
-            [doughnutChartLabels]="graficos.grafico1.labels"
-            [doughnutChartData]="graficos.grafico1.data"
-            [doughnutChartType]="graficos.grafico1.type"
-            ></app-donut-chart>
-
+            <app-donut-chart [graphic]="graficos.grafico1"></app-donut-chart>
           </div>
       </div>
   </div>
   <div class="col-6">
     <div class="card">
         <div class="card-body">
-          <h4 class="card-title">{{ graficos.grafico2.leyenda }}</h4>
-          <app-donut-chart 
-          [doughnutChartLabels]="graficos.grafico2.labels"
-          [doughnutChartData]="graficos.grafico2.data"
-          [doughnutChartType]="graficos.grafico2.type"
-          ></app-donut-chart>
-
-          </div>
-      </div>
-  </div>
-
-  <div class="col-6">
-    <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">{{ graficos.grafico3.leyenda }}</h4>
-          <app-donut-chart 
-          [doughnutChartLabels]="graficos.grafico3.labels"
-          [doughnutChartData]="graficos.grafico3.data"
-          [doughnutChartType]="graficos.grafico3.type"
-          ></app-donut-chart>
-
+          <app-donut-chart [graphic]="graficos.grafico2"></app-donut-chart>
         </div>
     </div>
   </div>
@@ -43,13 +17,15 @@
   <div class="col-6">
     <div class="card">
         <div class="card-body">
-          <h4 class="card-title">{{ graficos.grafico4.leyenda }}</h4>
-          <app-donut-chart 
-          [doughnutChartLabels]="graficos.grafico4.labels"
-          [doughnutChartData]="graficos.grafico4.data"
-          [doughnutChartType]="graficos.grafico4.type"
-          ></app-donut-chart>
+          <app-donut-chart [graphic]="graficos.grafico3"></app-donut-chart>
+        </div>
+    </div>
+  </div>
 
+  <div class="col-6">
+    <div class="card">
+        <div class="card-body">
+          <app-donut-chart [graphic]="graficos.grafico4"></app-donut-chart>
         </div>
     </div>
   </div>

@@ -9,14 +9,6 @@ import { MultiDataSet, Label } from 'ng2-charts';
 })
 export class Graphics1Component implements OnInit {
 
-  public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: MultiDataSet = [
-    [350, 450, 100],
-    //[50, 150, 120],
-    //[250, 130, 70],
-  ];
-  public doughnutChartType: ChartType = 'doughnut';
-
   graficos: any = {
     'grafico1': {
       'labels': ['Con Frijoles', 'Con Natilla', 'Con tocino'],
@@ -48,9 +40,5 @@ export class Graphics1Component implements OnInit {
 
   ngOnInit() {
   }
-
-  test()
-  {
-    console.log(this.graficos.grafico1.labels[0]);
-  }
+  
 }
